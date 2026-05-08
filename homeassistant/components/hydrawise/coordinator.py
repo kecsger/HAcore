@@ -105,6 +105,9 @@ class HydrawiseMainDataUpdateCoordinator(HydrawiseDataUpdateCoordinator):
                 data.zone_id_to_controller[zone.id] = controller
             for sensor in controller.sensors:
                 data.sensors[sensor.id] = sensor
+
+        _LOGGER.debug("Hydrawise coordinator data: %s", self.data)
+        
         return data
 
     @callback
