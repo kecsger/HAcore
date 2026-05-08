@@ -1,5 +1,8 @@
 """DataUpdateCoordinator for the Hydrawise integration."""
 
+import logging
+_LOGGER = logging.getLogger(__name__)
+
 from collections.abc import Callable, Iterable
 from dataclasses import dataclass, field
 
